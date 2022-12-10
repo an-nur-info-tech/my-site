@@ -1,0 +1,48 @@
+@use '../custom' as *;
+
+.services {
+    position: relative;
+    padding: 1rem 0;
+    background-color: $body-color;
+
+
+    h1 {
+        color: $primary;
+     }
+
+    &__content {
+        padding: 1rem;
+        margin-top: 0rem;
+
+        p {
+            font-size: 0.8rem;
+            color: white;
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 1rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 5rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            color: $primary;
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 2.5rem;
+            }
+        }
+
+        &__pic {
+            max-width: 100%;
+        }
+    }
+
+    .bg-dark {
+        background-color: $black  !important;
+        color: white !important;
+    }
+}

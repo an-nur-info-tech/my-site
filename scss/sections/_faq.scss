@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.faq {
+    background-color: $body-color;
+
+    h1 {
+        color: $primary;
+    }
+    p {
+        color: white;
+    }
+    .accordion-item{
+
+        button{
+            background-color: black;
+            color: $primary !important;
+        }
+    }
+
+    
+}
