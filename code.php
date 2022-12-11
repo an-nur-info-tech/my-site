@@ -11,9 +11,6 @@ require 'PHPMailer/src/SMTP.php';
 //require 'vendor/autoload.php';
 if(isset($_POST['btn_submit'])){
 
-  if(session_status() == PHP_SESSION_NONE){
-    session_start();
-  }
 
   
 
@@ -57,11 +54,11 @@ if(isset($_POST['btn_submit'])){
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         if($mail->send()){
-            $_SESSION['msg'] = "Submittion success";
+            $_SESSION['msg'] = true;
         }
         //echo 'Message has been sent';
     } catch (Exception $e) {
-        $_SESSION['msg_err'] = "Error: ".$mail->ErrorInfo;
+        $_SESSION['msg'] = false;
         //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
     
