@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
     <!-- Animate on scroll CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Landing Page! </title>
   </head>
@@ -23,31 +25,31 @@
       <div class="container">
         <a class="navbar-brand" href="#">
           <!--Logo image goes here -->
-		      <img src="images/Anur.png" width="100" height="100" alt="Logo image">
+		      <img src="images/Anur.png" width="75" height="75" alt="Logo image">
         </a>
         <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <li class="nav-item px-sm-5 l1 anim">
+              <a class="nav-links active" aria-current="page" href="#home">HOME</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+            <li class="nav-item px-sm-5 l2 anim">
+              <a class="nav-links" href="#services">SERVICES</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+            <li class="nav-item px-sm-5 l3 anim">
+              <a class="nav-links" href="#testimonials">TESTIMONIES</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#faq">faz</a>
+            <li class="nav-item px-sm-5 l4 anim">
+              <a class="nav-links" href="#faq">FAQS</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+            <li class="nav-item px-sm-5 l5 anim">
+              <a class="nav-links" href="#contact">CONTACT</a>
             </li>
           </ul>
           <a href="https://wa.me/+2348137541749" target="_blank">
-            <button type="button" class="rounded-pill btn-rounded"> 
+            <button type="button" class="rounded-pill btn-rounded h6"> 
               +2348137541749
               <span>
                 <i class="fas fa-phone-alt"></i>
@@ -60,15 +62,15 @@
     <!--START  THE INTRO SECTION-->
     <section id="home" class="intro-section">
       <div class="container">
-        <div class="row align-items-center text-white">
+        <div class="row align-items-center text-white justify-content-center">
           <!--START  THE CONTENT FOR THE INTRO-->
-          <div class="col-md-12 intros text-center" data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="col-md-12 intros text-center" data-aos="zoom-in-up" data-aos-duration="2500">
             <h1 class="display-2" >
-              <span class="display-2--intro">Welcome to <span class="me"> An-Nur</span> info-tech.</span>
+              <span class="display-2--intro pt-5">Welcome to <span class="me"> An-Nur</span> info-tech.</span>
               <span class="display-2--description lh-base">Let expand your business with technology</span>
             </h1>
             <a href="#contact">
-              <button type="button" class="rounded-pill btn-rounded"> 
+              <button type="button" class="rounded-pill btn-rounded h5 hero-btn"> 
                 Get in touch
                 <span>
                   <i class="fas fa-arrow-right"></i>
@@ -79,188 +81,185 @@
         </div>
       </div>
       <!--APPLY WAVES FROM getwaves.io -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,186.7C384,181,480,107,576,106.7C672,107,768,181,864,213.3C960,245,1056,235,1152,202.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <div class="wave"></div>
     </section>
 
     <!--START SECTION 4 - THE SERVICES -->
-    <section id="services" class="services">
-      <div class="container">
+    <section id="services" class="services bg-white">
+      <div class="container" id="hidden">
         <div class="row text-center">
-          <h1 class="display-3 fw-bold"> Our services
+          <h3 class="display-3 fw-bold text-warning scroll-anim"> Our services
             <div class="heading-line mb-1"></div>
-          </h1>
+          </h3>
         </div>
      
       <!--START THE DESCRIPTION CONTENT -->
-        <div class="row pt-2 pb-2 mt-0 mb-3">
-          <div class="col-md-6 border-right">
-            <div class="bg-dark p-3">
-              <h2 class="fw-bold text-capitalize text-center">
+              <h2 class="text-capitalize text-center text-dark scroll-anim">
                 Our Services Range From Initial Design To Deployment Anywhere Anytime
               </h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="bg-dark p-4 text-start">
-              <p class="fw-light">
+              <p class="fw-light text-dark text-center scroll-anim">
                 We strategically solve every business problems facing an organization.
                 Website Development, Social Media Integration & Customization, Hosting & Domain Name Registration, Digital Marketing, Content Management Systems, etc. 
               </p>
-            </div>
-          </div>
-        </div>
       </div>
+      </section>
+      <section id="services" class="services bg-white">
+        <div class="container" id="hidden">
+                <!--START THE MARKETING CONTENT -->
+                <div class="d-sm-flex align-items-center justify-between scroll-anim">
+                  <div class="services mt-0 bg-white">
+                    <div class="services__content my-1 mt-0">
+                      <div class="icon d-block fas fa-paper-plane"></div>
+                      <h3 class="display-3--title mt-1 h3">IT Support</h3>
+                      <p class="lead p-text text-dark">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
+                        Dolores architecto vel cumque fugit sed praesentium.
+                      </p>
+                      <button type="button" class="rounded-pill btn-rounded border-primary hero-btn"> 
+                        learn more
+                        <span>
+                          <i class="fas fa-arrow-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="w-100 d-none d-sm-block">
+                    <div class="services__pic">
+                      <img src="images/services/Customer Service_Monochromatic.png" alt="marketing illustration" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container" id="hidden">
+                <!--START THE WEB DEVELOPMENT CONTENT -->
+                  <div class="d-sm-flex align-items-center justify-between scroll-anim">
+                    <div class="w-100 d-none d-sm-block">
+                      <div class="services__pic">
+                        <img src="images/services/Web development _Monochromatic.png" alt="development illustration" class="img-fluid mr-5">
+                     </div>
+                  </div>
+                  <div class="services mt-0">
+                    <div class="services__content my-1 mt-0">
+                        <div class="icon d-block fas fa-code"></div>
+                        <h3 class="display-3--title mt-1 h2">Web design/development</h3>
+                        <p class="lead p-text">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                          At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
+                          Dolores architecto vel cumque fugit sed praesentium.
+                        </p>
+                        <button type="button" class="rounded-pill btn-rounded border-primary hero-btn"> 
+                          learn more
+                          <span>
+                            <i class="fas fa-arrow-right"></i>
+                          </span>
+                        </button>                    
+                  </div>
+                </div>
+                </div>
+              </div>
+              </section>
+              <section id="services" class="services bg-white">
+                <div class="container" id="hidden">
+                <!--START THE MARKETING CONTENT -->
+                <div class="d-sm-flex align-items-center justify-between scroll-anim">
+                  <div class="services bg-white mt-0">
+                    <div class="services__content my-1 mt-0">
+                      <div class="icon d-block fas fa-paper-plane"></div>
+                      <h3 class="display-3--title mt-1 h3">Marketing</h3>
+                      <p class="lead p-text text-dark scroll-anim">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
+                        Dolores architecto vel cumque fugit sed praesentium.
+                      </p>
+                      <button type="button" class="rounded-pill btn-rounded border-primary hero-btn"> 
+                        learn more
+                        <span>
+                          <i class="fas fa-arrow-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="w-100 d-none d-sm-block">
+                    <div class="services__pic">
+                      <img src="images/services/Marketing _Two Color.png" alt="development illustration" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </section>
+              <section id="services" class="services">
+                <div class="container" id="hidden">
+                <!--START THE NETWORKING CONTENT -->
+                <div class="d-sm-flex align-items-center justify-between scroll-anim">
+                  <div class="w-100 d-none d-sm-block">
+                    <div class="services__pic">
+                      <img src="images/services/Network _Monochromatic.png" alt="hosting illustration" class="img-fluid">
+                   </div>
+                </div>
+                <div class="services mt-0">
+                  <div class="services__content my-1 mt-0">
+                      <div class="icon d-block fas fa-code"></div>
+                      <h3 class="display-3--title mt-1 h2">Networking</h3>
+                      <p class="lead p-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
+                        Dolores architecto vel cumque fugit sed praesentium.
+                      </p>
+                      <button type="button" class="rounded-pill btn-rounded border-primary hero-btn"> 
+                        learn more
+                        <span>
+                          <i class="fas fa-arrow-right"></i>
+                        </span>
+                      </button>                    
+                </div>
+              </div>
+              </div>
+            </div>
+            </section>
+            <section id="services" class="services cloud bg-white">
+              <div class="container" id="hidden">
+                <!--START THE CLOUD HOSTING CONTENT -->
+                <div class="d-sm-flex align-items-center justify-between scroll-anim">
+                  <div class="services bg-white my-1 mt-0">
+                    <div class="services__content mt-0">
+                      <div class="icon d-block fas fa-paper-plane"></div>
+                      <h3 class="display-3--title mt-1 h3">Cloud Hosting</h3>
+                      <p class="lead p-text text-dark">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
+                        Dolores architecto vel cumque fugit sed praesentium.
+                      </p>
+                      <button type="button" class="rounded-pill btn-rounded border-primary hero-btn"> 
+                        learn more
+                        <span>
+                          <i class="fas fa-arrow-right"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="w-100 d-none d-sm-block">
+                    <div class="services__pic">
+                      <img src="images/services/Data Hosting_Monochromatic.png" alt="hosting illustration" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div> 
     </section>
 
     <!--START THE CONTENT FOR THE SERVICES -->
-    <div class="container">
-      <!--START THE MARKETING CONTENT -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="icon d-block fas fa-paper-plane"></div>
-            <h3 class="display-3--title mt-1">IT Support</h3>
-            <p class="lh-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-              At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
-              Dolores architecto vel cumque fugit sed praesentium.
-            </p>
-            <button type="button" class="rounded-pill btn-rounded border-primary"> 
-              learn more
-              <span>
-                <i class="fas fa-arrow-right"></i>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-          <div class="services__pic">
-            <img src="images/services/Customer Service_Monochromatic.png" alt="marketing illustration" class="img-fluid">
-          </div>
-        </div>
-      </div>
-      <!--START THE WEB DEVELOPMENT CONTENT -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-          <div class="services__pic">
-            <img src="images/services/Web development _Monochromatic.png" alt="development illustration" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="services__content">
-              <div class="icon d-block fas fa-code"></div>
-              <h3 class="display-3--title mt-1">Web design/development</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
-                Dolores architecto vel cumque fugit sed praesentium.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary"> 
-                learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--START THE MARKETING CONTENT -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="services__content">
-              <!-- <i class="fa-sharp fa-solid fa-comments-dollar"></i> -->
-              <!-- <div class="icon d-block fas fa-code"> -->
-              <div class="icon d-block fas fa-solid fa-comments-dollar">
-                
-              </div>
-              <h3 class="display-3--title mt-1">Marketing</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
-                Dolores architecto vel cumque fugit sed praesentium.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary"> 
-                learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-          <div class="services__pic">
-            <img src="images/services/Marketing _Two Color.png" alt="development illustration" class="img-fluid">
-          </div>
-        </div>
-      </div>
-      <!--START THE NETWORKING CONTENT -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-          <div class="services__pic">
-            <img src="images/services/Network _Monochromatic.png" alt="hosting illustration" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="services__content">
-              <div class="icon d-block fas fa-cloud-upload-alt"></div>
-              <h3 class="display-3--title mt-1">Networking</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
-                Dolores architecto vel cumque fugit sed praesentium.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary"> 
-                learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--START THE CLOUD HOSTING CONTENT -->
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-          <div class="services__content">
-            <div class="services__content">
-              <div class="icon d-block fas fa-cloud-upload-alt"></div>
-              <h3 class="display-3--title mt-1">Cloud hosting</h3>
-              <p class="lh-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                At ipsum deleniti libero! Officia magni corrupti suscipit a, libero rem officiis esse? 
-                Dolores architecto vel cumque fugit sed praesentium.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary"> 
-                learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-          <div class="services__pic">
-            <img src="images/services/Data Hosting_Monochromatic.png" alt="hosting illustration" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!--START  SECTION 5 - THE TESTIMONIALS-->
-    <section id="testimonials" class="testimonials">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,229.3C672,235,768,213,864,181.3C960,149,1056,107,1152,122.7C1248,139,1344,213,1392,250.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-      <div class="container">
+    <section id="testimonials" class="testimonials pb-5">
+      <div class="wave-180"></div>
+      <div class="container" id="hidden">
         <div class="row text-center text-white">
-          <h1>Testimomials</h1>
+          <h3 class="fw-bold text-warning scroll-anim">Testimonies</h3>
           <hr style="width: 100%; height: 3px;" class="mx-auto">
-          <p class="lead pt-1">What our clients are saying</p>   
+          <p class="lead pt-1 scroll-anim">What Our Clients Are Saying</p>   
         </div>
         <!--START  THE CAROUSEL CONTENT -->
           <!--Carousel*********** -->
@@ -270,7 +269,7 @@
                 <div class="carousel-item active">
                   <!--TESTIMONIALS CARD-->
                   <div class="testimonials__card">
-                    <p class="lh-lg">
+                    <p class="lh-lg scroll-anim">
                       <i class="fas fa-quote-left"></i>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                       Quibusdam cupiditate quaerat libero reprehenderit minus, 
@@ -413,76 +412,76 @@
                 </div>
             </div>
             <!-- PLACING THE CAROUSEL LEFT AND RIGHT BUTTON TO THE CENTER-->
-            <div class="text-center">
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
-              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
+            <div class="text-center direction-btn">
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-left m-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-right m-0" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
             </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,160C384,139,480,85,576,101.3C672,117,768,203,864,213.3C960,224,1056,160,1152,154.7C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      
     </section>
     
     <!--START  SECTION 6 - THE FAQ-->
-    <section id="faq" class="faq">
-      <div class="container">
+    <section id="faq" class="faq py-5 bg-white">
+      <div class="container" id="hidden">
         <div class="row text-center">
-          <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+          <h3 class="display-3 fw-bold text-uppercase text-warning scroll-anim">faq</h3>
           <div class="heading-line"></div>
-          <p class="lead">Frequently asked question, get knowledge before hand </p>
+          <p class="lead text-dark scroll-anim">Frequently asked question, get knowledge before hand. </p>
         </div>
         <!--ACCORDIAN CONTENT-->
         <div class="row mt-5">
           <div class="col-md-12">
             <div class="accordion" id="accordionExample">
               <!--ACCORDIAN COMMENT 1 -->
-              <div class="accordion-item shadow mb-3">
+              <div class="accordion-item shadow mb-3 scroll-anim">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What are the main features?
+                    What are your main features?
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>An-nur info-tech is an 100% tech service provider which has been in existence traditionally since 2020.</strong> We provide variety of digital services for individuals and enterprises. Our services include website design, digital marketing, domain registration, web hosting, networking etc. To know more about us please visit 'About Us' page on our website.
                   </div>
                 </div>
               </div>
               <!--ACCORDIAN COMMENT 2 -->
-              <div class="accordion-item shadow mb-3">
+              <div class="accordion-item shadow mb-3 scroll-anim">
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Do i have to pay after trial
+                    What kind of companies and businesses are you rendering service to?
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>We work for a wide variety of companies ranging from small start-ups to big corporates.</strong> The industries and areas we render our services to include but to limited to technology, finance, food, health, travel, arts, fitness, educational sectors and more. We support firms to improve their customer services and market their products digitally. As the first step of the process, a team of our best designers will do research on the industry we are working with and support it with the best website design possible.
                   </div>
                 </div>
               </div>
               <!--ACCORDIAN COMMENT 3 -->
-              <div class="accordion-item shadow mb-3">
+              <div class="accordion-item shadow mb-3 scroll-anim">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How can i get started after trial?
+                    Who will i work with during the project?
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Many web development companies use freelance developers or interns for their projects.</strong> Even some of the best website design companies don't give access for clients to meet with their designers or developers. So, you have asked a very vital question and you should ask this to any firm you approach foor this purpose. With us, you will directly work with our core developers but may change according to the stages of development.
                   </div>
                 </div>
               </div>
               <!--ACCORDIAN COMMENT 4 -->
-              <div class="accordion-item shadow mb-3">
+              <div class="accordion-item shadow mb-3 scroll-anim">
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Can i be refunded if am not satisfied?
+                    Will i be refunded if am not satisfied?
                   </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Regrettably no.</strong> We do not offer refunds if you aren't satisfied with our services. We can only take down your preferences and use it to improve our delivery and tailor your website according to your wants or better still we recreate a new project for you.
                   </div>
                 </div>
               </div>
@@ -496,7 +495,7 @@
     
     <!--START  SECTION 8- GET STARTED -->
     <section id="contact" class="get-started">
-      <div class="container">
+      <div class="container" id="hidden">
         <div class="row text-center">
           <h1 class="display-3 fw-bold text-capitalize"> get started </h1>
           <div class="heading-line"></div>
@@ -580,7 +579,7 @@
                   <textarea name="message" placeholder="Message..." id="message" class="shadow form-control form-control-lg" rows="8"></textarea>
                 </div>
                 <div class="text-center d-grid mt-1">
-                  <button type="submit" name="btn_submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                  <button type="submit" name="btn_submit" class="btn btn-primary rounded-pill pt-3 pb-3" id="submit">
                     submit
                     <i class="fas fa-paper-plane"></i>
                   </button>
@@ -594,8 +593,8 @@
 
     <!--START SECTION 9 - THE FOOTER-->
     <footer class="footer">
-      <div class="container">
-        <div class="row">
+      <div class="container" id="hidden">
+        <div class="row scroll-anim">
           <!--CONTENT FOR THE MOBILE NUMBER-->
           <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
             <div class="contact-box__icon">
@@ -642,7 +641,7 @@
                 <line x1="15" y1="15" x2="15" y2="20" />
               </svg>
             </div>
-            <div class="contact-box__info">
+            <div class="contact-box__info ml-0">
               <a href="#" class="contact-box__info--title">Kwara state & Lagos state. Nigeria</a>
               <p class="contact-box__info--subtitle">
                 No.135 ibrahim taiwo road offa, kwara state.
@@ -695,6 +694,7 @@
     <!-- Animate on scroll js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 
   </body>
 </html>
