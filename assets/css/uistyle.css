@@ -60,7 +60,7 @@
   }
   .wave{
     position: absolute;
-    top:87vh;
+    top:90vh;
     width: 100%;
     height: 100px;
     left: 0;
@@ -206,3 +206,31 @@
     color: black;
   }
   
+  .left-btn{
+    margin-right: 20px!important;
+  }
+
+  /*-------- Animated-logo-------------- */
+  .animated-logo{
+    position: fixed;
+    top: 87vh;
+    left: 30px;
+    background-color: black;
+    opacity: .9;
+    border-radius: 50%;
+  }
+  #animated-logo{
+    color: white;
+  }
+  #text{
+    animation: circle 5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes circle {
+    100%{
+      transform: rotate(360deg);
+    }
+    
+  }
