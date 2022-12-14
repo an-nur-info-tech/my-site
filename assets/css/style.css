@@ -11606,3 +11606,211 @@ textarea.form-control-lg {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* -----------Navbar Section------------ */
+.header{
+  width: 100%;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+}
+#hidden{
+  opacity: 0;
+}
+.scroll-anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: scroll 1s linear forwards;
+}
+@keyframes scroll {
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.hero2 h3.scroll-anim{
+  animation-delay: .5s;
+}
+.hero2 svg.scroll-anim{
+  animation-delay: 1s;
+}
+
+
+.nav-links{
+  position: relative;
+  font-size: 16px;
+}
+.nav-links::before{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: .3s ease-in-out;
+}
+.nav-links:hover::before{
+  width: 100%;
+}
+/* -------------Intro section------------------- */
+
+.intro-section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+ 
+}
+.display-3{
+  font-size: 30px;
+}
+.wave{
+  position: absolute;
+  top:87vh;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  background:url('https://c418.org/wp-content/uploads/revslider/landing/wave-300x42.png');
+  background-size: 2000px 100px;
+  animation: wave 5s alternate infinite;
+  }
+
+  @keyframes wave {
+      0%{
+          background-position-x: 2000px;
+      }
+      100%{
+          background-position-x: 0px;
+      }
+      
+  }
+  .wave-180{
+      position: absolute;
+      top:0;
+      transform: rotate(180deg);
+      width: 100%;
+      height: 100px;
+      left: 0;
+      background:url('https://c418.org/wp-content/uploads/revslider/landing/wave-300x42.png');
+      background-size: 2000px 100px;
+      animation: wave 5s alternate infinite;
+      }
+  
+      @keyframes wave {
+          0%{
+              background-position-x: 2000px;
+          }
+          100%{
+              background-position-x: 0px;
+          }
+          
+      }
+.hero2 .container h3{
+  font-size: 48px;
+  color: white;
+  font-weight: 500;
+  padding-top: 200px;
+}
+
+.circle-anim{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top:50%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  background: linear-gradient(30deg, rgb(0, 81, 255), lightgreen);
+  animation: expand 5s alternate;
+}
+@keyframes expand {
+  0%{
+      background: linear-gradient(30deg, rgb(0, 81, 255), lightgreen);
+      transform: translate(-50%,-50%) scale(2.5);
+  }100%{
+      background: linear-gradient(30deg, rgb(0, 81, 255), lightgreen);
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.btn{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 40px;
+  transition: .5s ease-in-out;
+  }
+
+/* -----------------Service---------------- */
+.services{
+  padding: 40px 0;
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+}
+.p-text{
+  font-size: 24px!important;
+}
+/*-------------------Testimonies--------------------*/
+.testimonials{
+  padding-top: 200px;
+}
+#submit{
+  width: 100%;
+  margin: 0;
+}
+
+.direction-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.service img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  opacity: .9;
+  transition: all ease-in-out;
+}
+.our-service{
+  padding: 0;
+  margin-top: 20px;
+  color: white;
+}
+.service h4{
+  font-size: 20px;
+  color: lightgray;
+  font-weight: 400;
+}
+.our-service li{
+  margin-bottom: 50px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+}
+.our-service i{
+  margin-left: 20px;
+}
+.our-service li:hover{
+  transform: translateX(30px);
+  color: black;
+}
