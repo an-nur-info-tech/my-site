@@ -1,15 +1,4 @@
 /* -----------Navbar Section------------ */
-.header{
-    width: 100%;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    position: fixed;
-    z-index: 999;
-  }
-  #hidden{
-    opacity: 0;
-  }
   .scroll-anim{
     opacity: 0;
     transform: translateY(30px);
