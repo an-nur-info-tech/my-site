@@ -150,8 +150,8 @@
     position: relative;
   }
   .p-text{
-    font-size: 24px!important;
-  }
+    font-size: 20px!important;
+    }
   /*-------------------Testimonies--------------------*/
   .testimonials{
     padding-top: 200px;
@@ -213,12 +213,13 @@
   /*-------- Animated-logo-------------- */
   .animated-logo{
     position: fixed;
-    top: 87vh;
-    left: 30px;
+    left: 1.875rem;
+    bottom: 1.875rem;
     background-color: black;
     opacity: .9;
     border-radius: 50%;
   }
+
   #animated-logo{
     color: white;
   }

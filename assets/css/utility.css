@@ -135,4 +135,8 @@ li{
         height: 80vh;
        
     }
+    .animated-logo svg{
+        height: 50px;
+        width: 50px;
+      }
 }
