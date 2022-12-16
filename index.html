@@ -1,3 +1,9 @@
+<?php
+if(session_status() == PHP_SESSION_NONE){
+  session_start();
+}
+require ('code.php');
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,6 +27,10 @@
     <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
     <!-- Animate on scroll CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Sweet alert -->
+    <script src="assets/sweetalert2/sweetalert.all.min.js"></script>
+    
     <link rel="stylesheet" href="assets/css/utility.css">
     <link rel="stylesheet" href="assets/css/uistyle.css">
 
@@ -531,27 +541,29 @@
             </symbol>
           </svg>          
           <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <?php
+            //Alert with session
+            if(isset($_SESSION['msg'])){
+                echo 
+                '<script>
+                Swal.fire({
+                    title: "'.$_SESSION['msg_title'].'",
+                    text: "'.$_SESSION['msg_info'].'",
+                    icon: "'.$_SESSION['msg_icon'].'",
+                    confirmButtonText: "Ok"
+                  }).then((result) =>{
+                    if(result.value){
+                      //window.location = "index.php"
+                    }
+                  })
+                </script>';
+                unset($_SESSION['msg']);
+                unset($_SESSION['msg_title']);
+                unset($_SESSION['msg_info']);
+                unset($_SESSION['msg_icon']);              
+            }
+            ?>
             <div class="form w-100 pb-2">
-              <?php
-                if(isset($_SESSION['msg'])){
-              ?>
-                  <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#check-circle-fill"/></svg>
-                    <?php echo $_SESSION['msg']; unset($_SESSION['msg']); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-              <?php
-                }elseif(isset($_SESSION['msg_err'])){
-              ?>
-                  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-                      <?php echo $_SESSION['msg_err']; unset($_SESSION['msg_err']); ?>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-              <?php
-                }
-              ?>
-
               <h1 class="mb-5"> Start your project</h1>
               <form action="" method="post" class="row">
                 <div class="col-lg-6 col-md-6 mb-3">
