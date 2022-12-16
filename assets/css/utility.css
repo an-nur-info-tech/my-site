@@ -28,22 +28,7 @@ a{
         margin-bottom: 50px!important;
         transform: translateX(-150px);
     }
-    .wave-con .container h1{
-        margin-top: 85%;
-        font-size: 30px;
-        color: white;
-    }
-    .wave-con .container h2{
-        margin-top: 15%;
-        font-size: 24px;
-        color: black;
-    }
-    .hero2 .container h3{
-        font-size: 28px;
-        color: white;
-        margin-top: 20px;
-        font-weight: 500;
-    }
+    
     .circle-anim{
         position: absolute;
         width: 300px;
