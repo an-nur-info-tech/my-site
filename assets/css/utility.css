@@ -25,7 +25,7 @@ a{
         transform: translateX(-50%);
     }
     .nav-item{
-        margin-bottom: 50px!important;
+        margin-bottom: auto;
         transform: translateX(-150px);
     }
     
@@ -41,23 +41,23 @@ a{
         animation: expand 5s alternate;
     }
     .anim{
-        animation: movin 2s linear forwards;
+        animation: movin .5s linear forwards;
        
     }
     .l1.anim{
         animation-delay: .5s;
     }
     .l2.anim{
-        animation-delay: 1.5s;
+        animation-delay: 1s;
     }
     .l3.anim{
-        animation-delay: 2.5s;
+        animation-delay: 1.5s;
     }
     .l4.anim{
-        animation-delay: 3s;
+        animation-delay: 2s;
     }
     .l5.anim{
-        animation-delay: 4.5s;
+        animation-delay: 2.5s;
     }
     
     @keyframes movin {
